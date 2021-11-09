@@ -11,8 +11,10 @@ const useStyles = makeStyles((theme) =>  ({
         paddingBottom:theme.spacing(2),
     },
     buttonContinue: {
+        flexGrow: 2,
         paddingTop: theme.spacing(2),
-        
+        color:"#fff",
+        background: "#26319a",
     },
 }));
 
@@ -33,7 +35,7 @@ function Registration() {
                <TextField className = {classes.textBox} fullWidth label="Telefone" id="fullWidth" />
                <TextField className = {classes.textBox} fullWidth label="Senha" id="fullWidth" /> 
                <TextField className = {classes.textBox} fullWidth label="Confirmar senha" id="fullWidth" />
-                  <Button className= {classes.buttonContinue} variant="contained">Continuar</Button>
+                  <Button className= {classes.buttonContinue} variant="contained" id = "buttonForm">Continuar</Button>
              </Box>
         </div>
     );

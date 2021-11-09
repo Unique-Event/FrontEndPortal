@@ -20,10 +20,10 @@ function App() {
     spacing: 4,
     palette: {
       primary: {
-        main: '#f44336',
+        main: '#26319a',
       },
       secondary: {
-        main: '#3EA6FF',
+        main: '#e64a57',
       },
       
     },
