@@ -3,10 +3,12 @@
     --secondary: #26319a;
   }
   
-  .btn {
+  #btRegister {
     background-color: var(--secondary);
+    color:var(--primary);
     padding: 8px 20px;
     border-radius: 2px;
+    font-weight: bold;
     outline: none;
     border: none;
     cursor: pointer;
@@ -45,4 +47,5 @@
     background: "#fcf9f9";
     color: #fcf9f9;
     transition: 250ms;
+    border: #26319a;
   }

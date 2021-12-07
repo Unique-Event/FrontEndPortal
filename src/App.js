@@ -1,18 +1,21 @@
 import React from 'react';
 import './App.css';
-
-import { ThemeProvider, createMuiTheme, makeStyles } from '@material-ui/core';
+//import { useState } from 'react';
+import { ThemeProvider, createMuiTheme } from "@material-ui/core";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { makeStyles } from '@material-ui/styles';
 
-import Home from './components/pages/home';
-import Registration from './components/pages/registration';
 import Navbar from './components/Navbar';
+
+import Home from './components/Pages/Home';
+import Registration from './components/Pages/Registration';
+import Version from './components/Pages/Version';
+import Final from './components/Pages/Final';
 
 
 const useStyles = makeStyles({
   root: {},
 });
-
 
 function App() {
 
@@ -33,11 +36,12 @@ function App() {
   return (
     <ThemeProvider theme = { theme }>
       <Router>
-        <Navbar />
-        <Route path='/home' exact component={Home} />
+       <Navbar />
         <Switch>
-          {/* <Route path='/users' component={User} />  */}
+          <Route path='/' exact component={Home} />
           <Route path='/registration' component={Registration} />
+          <Route path='/version' component={Version} />
+          {/* <Route path='/final' component={Final} /> */}
         </Switch>
       </Router>
     </ThemeProvider>

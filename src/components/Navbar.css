@@ -1,17 +1,21 @@
-.navbar {
+#navbar {
     background: linear-gradient(to bottom right, #14004B, #310E43, #7F4937) fixed;
     padding-bottom: 0;
-    height: 80px;
+    height: 85px;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     font-size: 1.2rem;
     z-index: 1;
+    position: fixed;
+    
   }
   
   #logo{
-    height: 65px;
-    padding-top: 10px;
+    height: 70px;
+    padding-top: 0.5rem;
+    margin-left: 1rem;
   }
   
   .fa-firstdraft {
@@ -60,7 +64,7 @@
     display: none;
   }
   
-  @media screen and (max-width: 960px) {
+  /* @media screen and (max-width: 960px) {
     .NavbarItems {
       position: relative;
     }
@@ -137,8 +141,7 @@
       color: #1888ff;
       transition: 250ms;
     }
-  
-    button {
-      display: none;
-    }
+   
+   
   }
+  */

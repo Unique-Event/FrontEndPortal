@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
+import ButtonRegister from './ButtonRegister';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 
-function Navbar() {
+export const Navbar = () => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
   
@@ -27,10 +27,10 @@ function Navbar() {
 
 
   return (
-    <>
-      <nav className='navbar'>
+    
+      <nav id="navbar">
 
-        <Link to='/home' className='navbar-logo' onClick={closeMobileMenu}>
+        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             <img src = '/FOTOS/logoOficial.png' alt ="logo" id ="logo"></img>
             <i class='fab fa-firstdraft' />
         </Link>
@@ -45,15 +45,15 @@ function Navbar() {
              </Link>
              {button && <Button buttonStyle='btn--outline'> Entrar </Button>}
            </li> */}
-           <li>
-            <Link to='/registration' className='nav-links-mobile' onClick={closeMobileMenu}>
-               Cadastrar
-            </Link>
-           </li>
+         
          </ul>
-          {button && <Button buttonStyle='btn--outline'>Cadastrar</Button>}
+         
+          <Link to='/registration'>
+               <ButtonRegister />
+          </Link>
+         
       </nav>
-    </>
+  
   );
 }
  export default Navbar;

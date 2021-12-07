@@ -1,12 +1,28 @@
-
-.home,
-.users,
-.registration {
-  display: flex;
-  height: 90vh;
+#boxFrame{
+  width: 100%;
+  height: 95vh;
+  margin-top: -7px;
+  font-size: 3rem;
+  background-color: #14004B;
+  color:#fcf9f9;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+}
+
+.buttonRegister{
+  color: #fcf9f9;
+  background: linear-gradient(45deg, #ff464b 30%, #ff8e53 90%);
+  border-radius: 3px;
+  font-size: 16px;
+  border: 0;
+  height: 48px;
+  padding: 0 30px;
+  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, 0.3);
+  font-weight: bold;
+}
+
+.linkRegister{
+  text-decoration: none;
 }
 
 body{
@@ -14,56 +30,224 @@ body{
     background: linear-gradient(to bottom right, #14004B, #310E43, #7F4937) fixed;
 }
 
-#foto-capa {
+.homePage{
   width: 100%;
-  height: 91vh;
-  
+  height: 100vh;
 }
 
+#foto-capa {
+  width: 100%;
+  height: 96vh;
+  margin-top: 5vh;
+}
 
-.frame{
+#boxFrame1{
+  height: 95vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background-color: #fcf9f9;
+  color:#14004B;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.carousel{
   margin-left: auto;
   margin-right: auto;
+  width: 70%;
+}
+
+.imgSlide{
+  width: 90vh;
+  height: 50vh;
+  align-items: center;
+  margin-left: 16%;
+  border-radius: 1rem;
+
+}
+
+.fotoCapaEventos{
+  height: 85vh;
+  background-color: #fcf9f9;
+}
+
+.gridFoto{
+  border:none;
+  background-color: #fcf9f9;
+  opacity: 100;
+}
+
+.videoFrame{
   margin-top: auto;
   margin-bottom: auto;
-  z-index: 5;
+  border:none;
+  height: 350px;
+}
 
+#boxFrame2{
+  margin-right: auto;
+  margin-left: auto;
+  height: 95vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;  
+  color: #fcf9f9;
+}
+
+#boxContainerFrame2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: auto;
+  margin-left: 160px;
+}
+
+.boxContate{
+  margin-left: 10rem;
+  padding: 2rem;
+  color: #14004B;
+}
+
+.contateForm{
+  background-color: #fcf9f9;
+  color:#14004B;
+  width: 500px;
+  height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+
+}
+
+.textContate{
+   width: 350px;
+}
+
+.buttonContate{
+  color: #fcf9f9;
+  background: #14004B;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 0;
+  height: 40px;
+  width: 350px;
+  padding: 0 30px;
+  font-weight: bold;
 }
 
 .formulario {
-  background:#fff;
-  height: 85vh;
-  width: 95%;
-  margin-top: 2.5vh;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   text-align: center;
-  border-radius: 0.3rem;
-  
+  margin: auto;
+}
+
+.textBox{
+  padding-bottom:2rem;
+  padding:2rem;
+  flex-grow: 5;
+}
+
+.videoTela{
+  float: right;
+  margin-right: 7rem;
+  margin-top: -20rem;
+  height: 300px;
+  cursor: pointer;
+  z-index: 100;
+  border-radius: 1rem;
+}
+
+.helpVersion{
+  float:left;
+  margin-top: 2rem;
+  cursor: pointer;
+  z-index: 100;
+  margin-left: 1rem;
+  margin-top: -2rem;
 }
 
 .boxRegister{
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
-  margin-top: -35px;
+  margin-top: auto;
+  background-color: #fcf9f9;
+  text-decoration: none;
+  
+}
+
+.boxRegisterWhite{
+  background-color: #fcf9f9;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 97%;
+  margin-top: 2rem;
+}
+
+.address{
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  padding: 3rem;
 }
 
 #buttonForm {
-  width:100%;
+  width:450px;
   height:40px;
   cursor: pointer;
   font-weight: bold;
   color: #fcf9f9;
-  margin-top: 20px;
-  
+  background-color: #26319a;
+  margin-top:35px;
 }
 
+
 #buttonForm:hover{
-    transition: all 0.3s ease-out;
-    transition: 250ms;
-    background-color: #ff464b;
-    color:#fcf9f9;
-    opacity: 0.9;
+  transition: all 0.3s ease-out;
+  transition: 250ms;
+  background: linear-gradient(45deg, #ff464b 30%, #ff8e53 90%);;
+  color:#fcf9f9;
+  opacity: 0.9;
 }
+
+#boxFooter{
+  background-color:#310E43;
+  height: 100px;
+  width: 100%;
+  padding: 10px;
+}
+
+#version {
+  background-color: #fcf9f9;
+  width: 100%;
+  height: 90vh;
+  align-items: center;
+  padding:auto;
+}
+
+#suporte{
+  text-decoration: none;
+  margin-left: 10rem;
+  color: #fcf9f9;
+  
+}
+#termos{
+  text-decoration: none;
+  margin-left: 10rem;
+  color: #fcf9f9;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 500px) {
+  #foto-capa {
+    display: none;
+  }
+}  
