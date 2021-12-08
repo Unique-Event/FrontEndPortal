@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Pages/Home';
 import Registration from './components/Pages/Registration';
 import Version from './components/Pages/Version';
+import Regulamento from './components/regulation/Regulamento';
 import Final from './components/Pages/Final';
 
 
@@ -41,6 +42,7 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/registration' component={Registration} />
           <Route path='/version' component={Version} />
+          <Route path='/regulation' component={Regulamento} />
           {/* <Route path='/final' component={Final} /> */}
         </Switch>
       </Router>

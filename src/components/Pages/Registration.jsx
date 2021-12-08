@@ -5,7 +5,7 @@ import { TextField, Box, Button, Divider } from '@material-ui/core';
 //import { useTheme } from '@material-ui/core/styles';
 import api from './http-common';
 //import { useQuery } from "react-query";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useMutation } from 'react-query';
 import { useHistory } from 'react-router-dom';
 //import axios from 'axios';
@@ -44,7 +44,12 @@ function Registration() {
             const [chose, setChose] = useState(null);
 
             const alertHelp = () => {
-               return alert("Você deve escolher a versão que deseja " + "\n" + "participar do evento." + "\n" + "Se VR, fique atento ao seu regulamento de uso!");
+               return alert("Você deve escolher a versão que deseja " + 
+                            "\n" + "participar do evento." + "\n" + "Se VR, fique atento ao seu regulamento de uso!");
+            }
+
+            const historyRegu = () => {
+              history.push('/regulation')
             }
 
             const [postFirstName, setPostFirstName] = useState("");
@@ -56,19 +61,19 @@ function Registration() {
             const [postPassword, setPostPassword] = useState("");
             const [postCheckPassword, setPostCheckPassword] = useState("");
             
-           
-
-            const { mutate: postParticipant } = useMutation(
-              async () => {
-                return await api.post(`/participants`, {
-                  firstName: postFirstName,
-                  lastName: postLastName,
-                  companyName: postNameCompany,
-                  job: postOffice,
-                  email: postEmail,
-                  phone: postPhone,
-                  password: postPassword,
-                })
+            //const [postVersion, setPostVersion] = useState("");           
+  
+              const { mutate: postParticipant } = useMutation(
+                async () => {
+                  return await api.post(`/participants`, {
+                    firstName: postFirstName,
+                    lastName: postLastName,
+                    companyName: postNameCompany,
+                    job: postOffice,
+                    email: postEmail,
+                    phone: postPhone,
+                    password: postPassword,
+                  })
               });
 
               function postData() {
@@ -92,7 +97,7 @@ function Registration() {
                     phone: postPhone,
                     password: postPassword,
                   })
-                });
+              });
     
     return (
         <div className = "formulario">
@@ -210,7 +215,7 @@ function Registration() {
                   <Grid container spacing={2} columns={8}>
                   <Grid item xs={4}>
                     <Item>
-                      <img src= "/FOTOS/vr1.png" className="versionFoto"></img>
+                      <img src= "/FOTOS/vr1.png" alt ="imagem-vr" className="versionFoto"></img>
                       <Radio 
                         value="VR" 
                         checked={chose === "VR"} 
@@ -220,7 +225,7 @@ function Registration() {
                   </Grid>
                   <Grid item xs={4}>
                     <Item>
-                      <img src= "/FOTOS/pc1.png" className="versionFoto"></img>
+                      <img src= "/FOTOS/pc1.png" alt ="imagem-desktop" className="versionFoto"></img>
                       <Radio 
                         value="Desktop" 
                         checked={chose === "Desktop"} 
@@ -291,7 +296,7 @@ function Registration() {
                           />   
                         </div>
                         <br />
-                        <a href="">
+                        <a href="./regulation/Regulamento.js" target="_blank" onClick={ historyRegu }>
                           Regulamento do equipamento
                         </a>
                        
