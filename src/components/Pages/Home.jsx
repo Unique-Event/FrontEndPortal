@@ -187,10 +187,10 @@ function Home() {
                 </Box>  
             </div>
             <div id ="boxFooter">
-                <a href="" id="termos">
+                <a id="termos">
                   Termos
                 </a>
-                <a href="" id = "suporte">
+                <a id = "suporte">
                   Suporte
                 </a>
             </div>

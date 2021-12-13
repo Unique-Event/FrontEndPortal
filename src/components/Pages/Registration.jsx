@@ -107,18 +107,18 @@ function Registration() {
                 }
               }
 
-              const { mutate: postAddress } = useMutation(
-                async () => {
-                  return await api.post(`/address`, {
-                    firstName: postFirstName,
-                    lastName: postLastName,
-                    companyName: postNameCompany,
-                    job: postOffice,
-                    email: postEmail,
-                    phone: postPhone,
-                    password: postPassword,
-                  })
-              });
+              // const { mutate: postAddress } = useMutation(
+              //   async () => {
+              //     return await api.post(`/address`, {
+              //       firstName: postFirstName,
+              //       lastName: postLastName,
+              //       companyName: postNameCompany,
+              //       job: postOffice,
+              //       email: postEmail,
+              //       phone: postPhone,
+              //       password: postPassword,
+              //     })
+              // });
     
     return (
         <div className = "formulario">

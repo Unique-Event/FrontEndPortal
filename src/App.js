@@ -3,7 +3,7 @@ import './App.css';
 //import { useState } from 'react';
 import { ThemeProvider, createMuiTheme } from "@material-ui/core";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { makeStyles } from '@material-ui/styles';
+//import { makeStyles } from '@material-ui/styles';
 
 import Navbar from './components/Navbar';
 
@@ -13,9 +13,9 @@ import Regulamento from './components/regulation/Regulamento';
 
 
 
-const useStyles = makeStyles({
-  root: {},
-});
+// const useStyles = makeStyles({
+//   root: {},
+// });
 
 function App() {
 
