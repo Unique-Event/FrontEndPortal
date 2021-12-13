@@ -19,11 +19,11 @@ export const Navbar = () => {
   //   }
   // };
 
-  useEffect(() => {
-    showButton();
-  }, []);
+  // useEffect(() => {
+  //   showButton();
+  // }, []);
 
-  window.addEventListener('resize', showButton);
+  //window.addEventListener('resize', showButton);
 
 
   return (
