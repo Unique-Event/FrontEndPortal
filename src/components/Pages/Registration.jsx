@@ -51,7 +51,8 @@ function Registration() {
             const historyRegu = () => {
               history.push('/regulation')
             }
-
+            
+            //VARIABLES AXIOS
             const [postFirstName, setPostFirstName] = useState("");
             const [postLastName, setPostLastName] = useState("");
             const [postNameCompany, setPostNameCompany] = useState("");
@@ -60,6 +61,27 @@ function Registration() {
             const [postPhone, setPostPhone] = useState("");
             const [postPassword, setPostPassword] = useState("");
             const [postCheckPassword, setPostCheckPassword] = useState("");
+
+            //VARIABLES EASY-PEASY
+            // const fisrtStore = useStoreState(state => state.FirstName);
+            // const lastStore = useStoreState(state => state.LastName);
+            // const companyStore = useStoreState(state => state.CompanyName);
+            // const jobStore = useStoreState(state => state.Job);
+            // const emailStore = useStoreState(state => state.Email);
+
+            // const setFirstNameStore = useStoreActions(state => state.setFirstName);
+            // const setLastNameStore = useStoreActions(state => state.setLastName);
+            // const setCompanyNameStore = useStoreActions(state => state.setCompanyName);
+            // const setJobStore = useStoreActions(state => state.setJob);
+            // const setEmailStore = useStoreActions(state = state.setEmail);
+
+            // const saveDataBase=()=> {
+            //    setFirstNameStore();
+            //    setLastNameStore();
+            //    setCompanyNameStore();
+            //    setJobStore();
+            //    setEmailStore();
+            // }
             
             //const [postVersion, setPostVersion] = useState("");           
   

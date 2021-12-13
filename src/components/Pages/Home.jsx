@@ -25,11 +25,11 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function Home() {
   
-  const [value, setValue] = React.useState('Controlled');
+    //const [value, setValue] = React.useState('Controlled');
 
-   const handleChange = (event) => {
-     setValue(event.target.value);
-   };
+   //const handleChange = (event) => {
+   //setValue(event.target.value);
+   //};
 
     
     return (

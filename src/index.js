@@ -4,6 +4,8 @@ import App from "./App";
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import { CssBaseline } from '@material-ui/core';
 import { QueryClient, QueryClientProvider } from "react-query";
+import { StoreProvider } from 'easy-peasy';
+import { store } from './Store/StoreConfig';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -21,7 +23,9 @@ ReactDOM.render(
   <React.StrictMode>
     {/* <CssBaseline />, */}
     <QueryClientProvider client={queryClient}>
-      <App />
+      <StoreProvider store = {store}>
+        <App />
+      </StoreProvider>
     </QueryClientProvider>
   </React.StrictMode>,
    document.getElementById("root")
