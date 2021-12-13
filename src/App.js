@@ -40,7 +40,7 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/registration' component={Registration} />
-          <Route path='/version' component={Version} />
+        
           <Route path='/regulation' component={Regulamento} />
           {/* <Route path='/final' component={Final} /> */}
         </Switch>
