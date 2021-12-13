@@ -44,8 +44,7 @@ function Registration() {
             const [chose, setChose] = useState(null);
 
             const alertHelp = () => {
-               return alert("Você deve escolher a versão que deseja " + 
-                            "\n" + "participar do evento." + "\n" + "Se VR, fique atento ao seu regulamento de uso!");
+               return alert("Você deve escolher a versão que deseja \n participar do evento. \n Se VR, fique atento ao seu regulamento de uso!");
             }
 
             const historyRegu = () => {
