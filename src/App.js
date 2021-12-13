@@ -9,9 +9,8 @@ import Navbar from './components/Navbar';
 
 import Home from './components/Pages/Home';
 import Registration from './components/Pages/Registration';
-import Version from './components/Pages/Version';
 import Regulamento from './components/regulation/Regulamento';
-import Final from './components/Pages/Final';
+
 
 
 const useStyles = makeStyles({
